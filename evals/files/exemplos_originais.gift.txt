@@ -1,0 +1,66 @@
+::Comando SQL para Inserção::
+Qual comando SQL é usado para inserir dados em uma tabela? {
+  ~SELECT #Incorreto, usado para consulta
+  =INSERT #Correto!
+  ~DELETE #Incorreto, usado para excluir
+  ~UPDATE #Incorreto, usado para modificar
+}
+
+::Benefícios do Exercício Físico::
+Quais são os benefícios do exercício físico regular? {
+  ~%-50%Maior taxa de colesterol
+  ~%50%Melhora da circulação sanguínea
+  ~%50%Fortalecimento do sistema imunológico
+  ~%-50%Aumento do estresse
+}
+
+::A Terra é redonda::
+A Terra é achatada. {FALSE}
+
+::Capital da França::
+Qual é a capital da França? {=Paris =paris}
+
+::Temperatura de Ebulição da Água::
+A que temperatura a água ferve ao nível do mar? {#100:2}
+
+::Idade de Albert Einstein quando ganhou o Nobel::
+Quantos anos Albert Einstein tinha quando ganhou o Prêmio Nobel? {
+  =42:0 #Resposta exata, 100% dos pontos
+  =%50%41:1 #Resposta próxima, 50% dos pontos
+}
+
+::Associação de Países e Capitais::
+Associe os países às suas capitais. {
+  =Brasil -> Brasília
+  =França -> Paris
+  =Japão -> Tóquio
+}
+
+::Descoberta do Brasil::
+O Brasil foi descoberto em {=1500} por Pedro Álvares Cabral.
+
+::Redação sobre Sustentabilidade::
+Escreva uma redação sobre a importância da sustentabilidade no mundo atual. {}
+
+::Instruções para a Prova::
+Você terá 60 minutos para concluir este exame. Leia cada pergunta com atenção.
+
+::Capital da Alemanha::
+Qual é a capital da Alemanha? {
+  ~Munique #Errado, Munique é uma cidade alemã, mas não é a capital.
+  =Berlim #Correto! Berlim é a capital da Alemanha.
+  ~Frankfurt #Errado, Frankfurt é um centro financeiro, mas não a capital.
+}
+
+[html]::Questão sobre HTML::
+<b>Qual tag HTML é usada para criar um link?</b> {=<a>}
+
+[markdown]::Questão sobre Markdown::
+**Qual símbolo é usado para negrito em Markdown?** {*}
+
+::Caracteres Especiais no GIFT::
+Qual dessas expressões resulta em 5? {
+  ~\=2+2 #Errado
+  =\=2+3 #Correto
+  ~\=2+4 #Errado
+}

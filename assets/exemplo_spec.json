@@ -1,0 +1,142 @@
+{
+  "titulo": "Exemplo — Todos os tipos de questão GIFT",
+  "disciplina": "Demonstração",
+  "publico": "Ensino médio técnico",
+  "categoria": "Demonstração/Todos os tipos",
+  "formato": "texto",
+  "quantidade_esperada": 10,
+  "instrucoes": "Leia cada questão com atenção. Duração: 60 minutos.",
+  "questoes": [
+    {
+      "tipo": "descricao",
+      "titulo": "Instruções",
+      "enunciado": "As próximas questões tratam de redes, programação e física.\nUse ponto como separador decimal nas respostas numéricas."
+    },
+    {
+      "tipo": "multipla_escolha",
+      "titulo": "Protocolo orientado à conexão",
+      "enunciado": "Qual protocolo da camada de transporte estabelece conexão (handshake de 3 vias) antes de enviar dados?",
+      "alternativas": [
+        {"texto": "UDP", "feedback": "O UDP não estabelece conexão: envia datagramas diretamente."},
+        {"texto": "TCP", "correta": true, "feedback": "Correto: SYN, SYN-ACK e ACK."},
+        {"texto": "IP", "feedback": "O IP é da camada de rede, não de transporte."},
+        {"texto": "ICMP", "feedback": "O ICMP é usado para mensagens de controle/erro na camada de rede."}
+      ],
+      "feedback_geral": "O TCP garante entrega ordenada e confiável; o UDP prioriza baixa latência.",
+      "dificuldade": "facil",
+      "bloom": "lembrar",
+      "justificativa": "Handshake de 3 vias é característica exclusiva do TCP entre as opções.",
+      "tags": ["redes", "transporte"]
+    },
+    {
+      "tipo": "multipla_resposta",
+      "titulo": "Estruturas imutáveis em Python",
+      "enunciado": "Quais dos tipos abaixo são imutáveis em Python?",
+      "alternativas": [
+        {"texto": "tuple", "correta": true},
+        {"texto": "str", "correta": true},
+        {"texto": "list", "feedback": "Listas podem ser alteradas: lst[0] = 1."},
+        {"texto": "dict {chave: valor}", "feedback": "Dicionários aceitam d[k] = v."}
+      ],
+      "dificuldade": "media",
+      "bloom": "compreender"
+    },
+    {
+      "tipo": "verdadeiro_falso",
+      "titulo": "Complexidade da busca binária",
+      "enunciado": "A busca binária em um vetor ordenado tem complexidade O(log n).",
+      "resposta": true,
+      "feedback_erro": "Revise: a cada passo o intervalo é dividido por 2.",
+      "feedback_acerto": "Isso: log₂(n) comparações no pior caso.",
+      "dificuldade": "facil",
+      "bloom": "lembrar"
+    },
+    {
+      "tipo": "resposta_curta",
+      "titulo": "Comando para listar arquivos",
+      "enunciado": "No terminal Linux, qual comando lista os arquivos do diretório atual?",
+      "respostas": [
+        {"texto": "ls"},
+        {"texto": "ls -l", "peso": 100, "feedback": "Também vale: formato longo."},
+        {"texto": "dir", "peso": 50, "feedback": "Funciona em algumas distros, mas o padrão é ls."}
+      ],
+      "dificuldade": "facil",
+      "bloom": "lembrar"
+    },
+    {
+      "tipo": "numerica",
+      "titulo": "Velocidade média",
+      "enunciado": "Um carro percorre 150 km em 2,5 h. Qual a velocidade média, em km/h?",
+      "unidade": "km/h",
+      "respostas": [
+        {"valor": 60, "tolerancia": 0, "feedback": "Exato: 150 ÷ 2,5 = 60."},
+        {"valor": 60, "tolerancia": 2, "peso": 50, "feedback": "Próximo, mas revise a divisão."}
+      ],
+      "feedback_erro": "Velocidade média = distância ÷ tempo.",
+      "dificuldade": "facil",
+      "bloom": "aplicar"
+    },
+    {
+      "tipo": "associacao",
+      "titulo": "Portas e serviços",
+      "enunciado": "Associe cada serviço à sua porta TCP padrão.",
+      "pares": [
+        {"item": "HTTP", "correspondente": "80"},
+        {"item": "HTTPS", "correspondente": "443"},
+        {"item": "SSH", "correspondente": "22"}
+      ],
+      "distratores": ["8080"],
+      "dificuldade": "media",
+      "bloom": "lembrar"
+    },
+    {
+      "tipo": "lacuna",
+      "titulo": "Estrutura de repetição",
+      "enunciado": "Em Python, a estrutura [[LACUNA]] repete um bloco enquanto a condição for verdadeira.",
+      "alternativas": [
+        {"texto": "while", "correta": true},
+        {"texto": "for"},
+        {"texto": "if"}
+      ],
+      "dificuldade": "facil",
+      "bloom": "compreender"
+    },
+    {
+      "tipo": "multipla_escolha",
+      "titulo": "Saída de código com chaves",
+      "enunciado": "Qual é a saída do código abaixo?",
+      "codigo": "d = {\"a\": 1, \"b\": 2}\n# soma os valores\nprint(sum(d.values()) == 3)",
+      "linguagem": "python",
+      "alternativas": [
+        {"texto": "True", "correta": true},
+        {"texto": "False"},
+        {"texto": "3"},
+        {"texto": "Erro: dict não tem values()"}
+      ],
+      "dificuldade": "media",
+      "bloom": "aplicar"
+    },
+    {
+      "tipo": "numerica",
+      "titulo": "Equação do 1º grau",
+      "enunciado": "Resolva: \\(2x + 3 = 11\\). Qual o valor de \\(x\\)?",
+      "respostas": [{"valor": 4}],
+      "dificuldade": "facil",
+      "bloom": "aplicar"
+    },
+    {
+      "tipo": "dissertativa",
+      "titulo": "TCP versus UDP",
+      "enunciado": "Compare TCP e UDP quanto a confiabilidade e latência e dê um exemplo de aplicação para cada um.",
+      "resposta_esperada": "TCP: confiável, ordenado, maior latência (ex.: web, e-mail). UDP: sem garantia de entrega, baixa latência (ex.: streaming, jogos, DNS).",
+      "criterios": [
+        {"descricao": "Diferencia confiabilidade corretamente", "pontos": 1},
+        {"descricao": "Diferencia latência corretamente", "pontos": 1},
+        {"descricao": "Exemplo adequado para cada protocolo", "pontos": 1}
+      ],
+      "linhas": 6,
+      "dificuldade": "dificil",
+      "bloom": "analisar"
+    }
+  ]
+}

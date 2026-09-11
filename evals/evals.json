@@ -1,0 +1,43 @@
+{
+  "skill_name": "moodle-gift",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Preciso de uma avaliação de Eletricidade Básica pro 1º ano do técnico em eletrotécnica, 8 questões, com umas numéricas de lei de Ohm e associação de resistores. Categoria Eletricidade/Unidade 1. Quero a versão impressa também.",
+      "expected_output": "Arquivo .gift.txt validado com 8 questões avaliativas, numéricas com ponto decimal e tolerância, categoria $CATEGORY correta, gabarito .md e prova impressa .md sem respostas.",
+      "files": [],
+      "assertions": [
+        "O arquivo .gift.txt existe e validate_gift.py retorna RESULTADO: OK",
+        "Há exatamente 8 questões avaliativas",
+        "Existem ao menos 2 questões numéricas com respostas calculadas corretamente",
+        "O arquivo contém a linha $CATEGORY: Eletricidade/Unidade 1",
+        "Foram entregues gabarito_*.md e prova_*.md",
+        "A prova impressa não contém as respostas nem os feedbacks"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "faz 6 questões de programação em python pro moodle (listas, dicionários e laços), com trechos de código nas questões. formato GIFT",
+      "expected_output": "Questões com código em <pre><code>, chaves e = escapados, importação sem erros.",
+      "files": [],
+      "assertions": [
+        "validate_gift.py retorna RESULTADO: OK",
+        "Há exatamente 6 questões avaliativas",
+        "Ao menos 3 questões exibem código em <pre><code>",
+        "Nenhum { ou } sem escape aparece fora do bloco de respostas"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Esse arquivo aqui dá problema quando importo no Moodle, algumas questões ficam estranhas. Consegue achar o que está errado e me devolver corrigido?",
+      "expected_output": "Diagnóstico dos problemas (numérica sem #, [html] antes do título, {*} curinga) e arquivo corrigido que passa na validação.",
+      "files": ["evals/files/exemplos_originais.gift.txt"],
+      "assertions": [
+        "Aponta que a numérica sem '#' vira resposta curta",
+        "Aponta que [html]/[markdown] estão antes do título",
+        "Aponta que {*} aceita qualquer resposta",
+        "O arquivo corrigido passa em validate_gift.py"
+      ]
+    }
+  ]
+}

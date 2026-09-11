@@ -1,0 +1,82 @@
+// Exemplo — Todos os tipos de questão GIFT
+// Gerado pela skill moodle-gift em 11/09/2026. Importar em: Banco de questões > Importar > formato GIFT.
+
+$CATEGORY: Demonstração/Todos os tipos
+
+// Descrição · Descrição
+::Instruções::[html]As próximas questões tratam de redes, programação e física.<br>Use ponto como separador decimal nas respostas numéricas.
+
+// Q01 · Múltipla escolha · Fácil · Lembrar
+// [tag:redes] [tag:transporte] [tag:dificuldade-facil] [tag:bloom-lembrar]
+::Q01 - Protocolo orientado à conexão::[html]Qual protocolo da camada de transporte estabelece conexão (handshake de 3 vias) antes de enviar dados?{
+	~UDP#O UDP não estabelece conexão\: envia datagramas diretamente.
+	=TCP#Correto\: SYN, SYN-ACK e ACK.
+	~IP#O IP é da camada de rede, não de transporte.
+	~ICMP#O ICMP é usado para mensagens de controle/erro na camada de rede.
+	####O TCP garante entrega ordenada e confiável; o UDP prioriza baixa latência.
+}
+
+// Q02 · Múltiplas respostas · Média · Compreender
+// [tag:dificuldade-media] [tag:bloom-compreender]
+::Q02 - Estruturas imutáveis em Python::[html]Quais dos tipos abaixo são imutáveis em Python?{
+	~%50%tuple
+	~%50%str
+	~%-50%list#Listas podem ser alteradas\: lst[0] \= 1.
+	~%-50%dict \{chave\: valor\}#Dicionários aceitam d[k] \= v.
+}
+
+// Q03 · Verdadeiro/Falso · Fácil · Lembrar
+// [tag:dificuldade-facil] [tag:bloom-lembrar]
+::Q03 - Complexidade da busca binária::[html]A busca binária em um vetor ordenado tem complexidade O(log n).{TRUE#Revise\: a cada passo o intervalo é dividido por 2.#Isso\: log₂(n) comparações no pior caso.}
+
+// Q04 · Resposta curta · Fácil · Lembrar
+// [tag:dificuldade-facil] [tag:bloom-lembrar]
+::Q04 - Comando para listar arquivos::[html]No terminal Linux, qual comando lista os arquivos do diretório atual?{
+	=ls
+	=ls -l#Também vale\: formato longo.
+	=%50%dir#Funciona em algumas distros, mas o padrão é ls.
+}
+
+// Q05 · Numérica · Fácil · Aplicar
+// [tag:dificuldade-facil] [tag:bloom-aplicar]
+::Q05 - Velocidade média::[html]Um carro percorre 150 km em 2,5 h. Qual a velocidade média, em km/h?{#
+	=60:0#Exato\: 150 ÷ 2,5 \= 60.
+	=%50%60:2#Próximo, mas revise a divisão.
+	~#Velocidade média \= distância ÷ tempo.
+}
+
+// Q06 · Associação · Média · Lembrar
+// [tag:dificuldade-media] [tag:bloom-lembrar]
+::Q06 - Portas e serviços::[html]Associe cada serviço à sua porta TCP padrão.{
+	=HTTP -> 80
+	=HTTPS -> 443
+	=SSH -> 22
+	= -> 8080
+}
+
+// Q07 · Múltipla escolha · Fácil · Compreender
+// [tag:dificuldade-facil] [tag:bloom-compreender]
+::Q07 - Estrutura de repetição::[html]Em Python, a estrutura {
+	=while
+	~for
+	~if
+} repete um bloco enquanto a condição for verdadeira.
+
+// Q08 · Múltipla escolha · Média · Aplicar
+// [tag:dificuldade-media] [tag:bloom-aplicar]
+::Q08 - Saída de código com chaves::[html]Qual é a saída do código abaixo?<pre><code class\="language-python">d \= \{"a"\: 1, "b"\: 2\}\n\# soma os valores\nprint(sum(d.values()) \=\= 3)</code></pre>{
+	=True
+	~False
+	~3
+	~Erro\: dict não tem values()
+}
+
+// Q09 · Numérica · Fácil · Aplicar
+// [tag:dificuldade-facil] [tag:bloom-aplicar]
+::Q09 - Equação do 1º grau::[html]Resolva\: \\(2x + 3 \= 11\\). Qual o valor de \\(x\\)?{#
+	=4:0
+}
+
+// Q10 · Dissertativa · Difícil · Analisar
+// [tag:dificuldade-dificil] [tag:bloom-analisar]
+::Q10 - TCP versus UDP::[html]Compare TCP e UDP quanto a confiabilidade e latência e dê um exemplo de aplicação para cada um.{}
