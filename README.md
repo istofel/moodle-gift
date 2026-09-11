@@ -49,8 +49,29 @@ moodle-gift/
 
 ## Instalação
 
-- **Claude.ai**: abra o arquivo `moodle-gift.skill` e clique em **Salvar skill** (ou envie-o na área de Skills das configurações).
-- **Claude Code**: copie a pasta para `~/.claude/skills/moodle-gift/` (ou `.claude/skills/` do projeto).
+### Claude.ai
+
+1. Na seção [Releases](../../releases) deste repositório, clique em **moodle-gift.skill**
+   para baixar o arquivo (ele será salvo na pasta de Downloads do seu computador).
+
+2. Acesse [claude.ai](https://claude.ai) e clique no ícone do seu perfil
+   (canto inferior esquerdo) → **Configurações**.
+
+3. Na barra lateral, clique em **Habilidades** (ou *Skills*).
+
+4. Clique no botão **Adicionar** → **Criar habilidade**.
+
+5. Selecione a opção **Fazer upload de arquivo**, localize o arquivo
+   `moodle-gift.skill` na sua pasta de Downloads e confirme.
+
+6. Clique em **Salvar**. A habilidade aparecerá na sua lista de habilidades ativa.
+
+Pronto. A partir daí, basta pedir ao Claude algo como *"cria uma prova de
+[disciplina] com [N] questões para o Moodle"* — a skill é ativada automaticamente.
+Você também pode invocá-la diretamente digitando `/moodle-gift` no chat.
+
+> **Requisito de plano:** Pro, Max, Team ou Enterprise com execução de código
+> habilitada.
 
 Requisito dos scripts: Python 3.8+ (somente biblioteca padrão).
 
