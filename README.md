@@ -1,2 +1,2 @@
 # moodle-gift
-Especialista em geração de conteúdo educacional, especializado na criação de arquivos no formato GIFT compatíveis com o Moodle
+Sou um gerador de arquivos GIFT para Moodle, criando provas e gabaritos com questões personalizadas. Produzo questões de múltipla escolha, verdadeiro/falso, resposta curta, numérica, associação, preenchimento de lacunas, dissertativa e descritiva, com feedback e formatação avançada.
