@@ -1,4 +1,10 @@
-# moodle-gift
+<p align="center">
+    <img src="docs/banner/moodle_gift.png" width="900px">
+</p>
+
+<hr/>
+
+# Moodle GIFT
 
 Skill para o Claude gerar **provas e bancos de questões no formato GIFT** prontos para importar no Moodle, com gabarito comentado e versão impressa opcional.
 
