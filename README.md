@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="docs/banner/moodle_gift.png" width="900px">
+    <img src="docs/banner/moodle_gift2.png" width="900px">
 </p>
 
 <hr/>
